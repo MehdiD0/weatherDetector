@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Russo+One&display=swap');
+
+:root {
+  --title-font : "Russo One", sans-serif;
+  --text-font : "Roboto", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #005C53;
+}
+
+body * {
+  cursor: default;;
+}
+
+h1,h2 {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  margin: 2rem auto;
+  color: #DBF227;
+  font-family: var(--title-font);
+  transition: all 0.5s ease;
+}
+
+.line {
+  height: 3px;
+  background-color: #9FC131;
+}
+
+section {
+  margin: 0 auto;
+  text-align: center;
+  padding: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrong-city {
+  color: red;
+  animation: shake 0.5s ease both;
+}
+
+section .input {
+  margin: 0 1rem;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  font-family: var(--text-font);
+  font-size: 1.2rem;
+}
+
+section .input:focus {
+  border: 2px solid #D6D58E;
+}
+
+section .input::placeholder {
+  color: #042940;
+  font-family: var(--text-font);
+}
+
+section .button {
+  margin: 0 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  background-color: #DBF227;
+  color: #042940;
+  font-family: var(--text-font);
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+section .button:hover {
+  background-color: rgba(214, 213, 142, 0.795);
+}
+
+section .button:active {
+  background-color: #DBF227;
+}
+
+.answer-con {
+  padding: 2rem;
+}
+
+.answer-con div {
+  margin: 2rem 0;
+  font-family: var(--text-font);
+  font-size: 2rem;
+  color: #DBF227;
+}
+
+.answer-con div span {
+  font-family: var(--title-font);
+  font-size: 3rem;
+  color: #042940;
+  transition: all 0.5s ease;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(5%);
+  }
+  50% {
+    transform: translateX(-5%);
+  }
+  75% {
+    transform: translateX(5%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

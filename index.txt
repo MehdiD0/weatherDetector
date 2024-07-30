@@ -1,0 +1,10 @@
+  if(resObj.error) {
+    title.classList.add("wrong-city");
+
+    setTimeout(() => {
+      title.classList.remove("wrong-city");
+    }, 500);
+
+    input.value=""
+    return ;
+  }
